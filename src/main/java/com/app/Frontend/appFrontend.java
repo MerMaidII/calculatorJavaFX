@@ -17,7 +17,7 @@ public class appFrontend {
 
 		Parent root = FXMLLoader.load(this.getClass().getResource("MainApp.fxml"));
 		Scene scene = new Scene(root);
-		//scene.getStylesheets().add(this.getClass().getResource("Styles.css").toExternalForm());
+		scene.getStylesheets().add(this.getClass().getResource("Styles.css").toExternalForm());
 
 		stageArg.setTitle("Calculator");
 		stageArg.setResizable(false);
