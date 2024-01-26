@@ -1,0 +1,57 @@
+.root {
+    frontItemColor: #4d4d4d;
+    frontItemColorFocused: #5d5d5d;
+    frontItemColorActive: #273164;
+    TopPaneColor:  #3d3d3d;
+    backgroundColor: #343434;
+
+    -fx-background-color: backgroundColor;
+}
+
+.root * {
+    -fx-text-fill: white;
+    -fx-font-size: 20pt;
+    -fx-font-family: "FreeSans";
+    -fx-font-weight: bold;
+}
+
+#StructurePane {
+}
+#TopPane {
+    -fx-background-color: TopPaneColor;
+    -fx-min-width: 100%;
+}
+#MainPane {
+    -fx-background-color: backgroundColor;
+    -fx-min-width: 100%;
+}
+
+.ResultBox {
+    -fx-fill: frontItemColor;
+    -fx-pref-widthwidth: 268px;
+    -fx-pref-height: 72px;
+}
+.ResultBoxPane > .content {
+    /*-fx-text-fill: white;*/
+    -fx-fill: white;
+    -fx-font-size: 24pt;
+    -fx-font-family: "FreeSans";
+    -fx-font-weight: bold;
+}
+
+
+.button {
+    -fx-background-color: frontItemColor;
+    -fx-padding: 7px;
+}
+.button:focused {
+    -fx-background-color: frontItemColorFocused;
+}
+.button:pressed {
+    -fx-background-color: frontItemColorActive;
+}
+
+#keyboard {
+    -fx-hgap: 5px;
+    -fx-vgap: 5px;
+}
