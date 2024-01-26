@@ -14,7 +14,6 @@ public class appFrontend {
 
     public void start(Stage stageArg) throws IOException {
 
-
 		Parent root = FXMLLoader.load(this.getClass().getResource("MainApp.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(this.getClass().getResource("Styles.css").toExternalForm());
@@ -35,6 +34,7 @@ public class appFrontend {
     }
 
     private void close(Stage stageArg) {
+
         Alert alertWin = new Alert(AlertType.CONFIRMATION);
         alertWin.setTitle("Exit application?");
         alertWin.setHeaderText("You are about to close the calculator");
