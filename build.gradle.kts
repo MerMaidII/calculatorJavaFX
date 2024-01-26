@@ -24,6 +24,7 @@ javafx {
 
 application {
     mainClass.set("com.app.Main")
+    mainModule.set("com.app")
 }
 
 jlink {
