@@ -13,7 +13,7 @@ public class Main extends Application {
         appBackend backend = new appBackend();
         appFrontend frontend = new appFrontend();
 
-        backend.start();
+        backend.start(frontend);
         frontend.start(arg0);
     }
 

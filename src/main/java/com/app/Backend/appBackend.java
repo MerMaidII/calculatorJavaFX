@@ -1,8 +1,10 @@
 package com.app.Backend;
 
+import com.app.Frontend.appFrontend;
+
 public class appBackend {
 
-    public void start() throws Exception {
+    public void start(appFrontend frontendRef) throws Exception {
         return;
     }
 
